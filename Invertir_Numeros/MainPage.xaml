@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Invertir_Numeros.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Margin="20,35,20,20" Padding="30,0" VerticalOptions="Center" BackgroundColor="AntiqueWhite">
+
+            <Image
+                Source="invernum.png"
+                SemanticProperties.Description="Invierte números facilmente..." HeightRequest="200"
+                HorizontalOptions="Center" />
+
+            <Label Text="1° Número" TextColor="DarkMagenta"  FontSize="7" FontAttributes="Bold"/>
+            <Entry x:Name="datoA" Placeholder="Ingrese un número" TextColor="DarkGrey"/>
+
+            <Label Text="2° Número" TextColor="DarkMagenta" FontSize="7" FontAttributes="Bold"/>
+            <Entry x:Name="datoB" Placeholder="Ingrese un número" TextColor="DarkGrey"/>
+
+            <Label Text="3° Número" TextColor="DarkMagenta" FontSize="7" FontAttributes="Bold"/>
+            <Entry x:Name="datoC" Placeholder="Ingrese un número" TextColor="DarkGrey"/>
+
+            <Label x:Name="Numero4" Text="4° Número" TextColor="DarkMagenta" FontSize="7" 
+                   FontAttributes="Bold"/>
+            <Entry x:Name="datoD" Placeholder="Ingrese un número" TextColor="DarkGrey"/>
+
+            <Button
+                Text="Invertir" TextColor="White" BackgroundColor="Purple"  BorderColor="AntiqueWhite" BorderWidth="3"
+                Clicked="btnInvertir_Clicked"
+                HorizontalOptions="Center" />
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
